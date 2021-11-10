@@ -5,7 +5,7 @@ class Db {
 
     filePath = './src/DB/db.sql'
     isInit = fs.existsSync(this.filePath)
-    db = this.filePath && new sqlite3.Database(this.filePath)
+    db = this.isInit && new sqlite3.Database(this.filePath)
     constructor() {
         if(!this.isInit) this.init()
     }
