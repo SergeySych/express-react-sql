@@ -1,0 +1,24 @@
+@import "../../app/mediaConstants"
+
+.Navigate
+  font-size: 16px
+  line-height: 20px
+  color: $border-medium
+  height: 40px
+  display: flex
+  align-items: center
+  cursor: pointer
+  & a
+    color: $border-medium
+    text-decoration: none
+  & .Active-nav
+    color: #3A80BA
+
+.Arrow
+  width: 6px
+  height: 6px
+  border: solid $border-medium
+  margin: 0 8px
+  border-width: 0 1px 1px 0
+  transform: rotate(-45deg)
+  cursor: auto

@@ -1,0 +1,40 @@
+@import "../../../app/mediaConstants"
+
+
+.Home-description
+  display: flex
+  flex-flow: row
+  color: $font-color-dif
+
+.Home-description-info
+  width: 586px
+  & p
+    font-size: 20px
+    line-height: 28.4px
+  & h2
+    font-weight: 400
+    font-size: 48px
+    line-height: 58.51px
+  & a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 154px
+    height: 56px
+    background: $font-color-dif
+    border: none
+    border-radius: 8px
+    color: $bg-color-header
+    text-decoration: none
+    & p
+      font-size: 16px
+    &:hover
+      color: #008cff
+
+.Home-description-img
+  & img
+    margin-left: 194px
+    @media (max-width: $breakpoint-first)
+      margin-left: 100px
+    @media (max-width: $breakpoint-second)
+      display: none

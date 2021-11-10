@@ -1,0 +1,33 @@
+@import "../../../app/mediaConstants"
+
+
+.Email-input
+  @media (max-width: $breakpoint-second)
+    width: 479px
+  margin: 154px auto 0 auto
+  display: flex
+  width: 579px
+  height: 64px
+  align-items: center
+
+
+  background: $font-color-dif
+  border: 1px solid $border-easy
+  box-sizing: border-box
+  border-radius: 10px
+  overflow: hidden
+  & button
+    color: $font-color-dif
+    width: 176px
+    height: 56px
+    border: none
+
+    background: $bg-color-header
+    border-radius: 8px
+  & input
+    border: none
+    font-size: 16px
+    width: 395px
+    outline: none
+    @media (max-width: $breakpoint-second)
+      width: 295px

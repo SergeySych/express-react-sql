@@ -1,0 +1,20 @@
+@import "../../../../app/mediaConstants"
+
+.PagArrow
+  width: 20px
+  height: 20px
+  border: solid $bg-color-header
+  margin: 0 8px
+  border-width: 0 4px 4px 0
+  border-radius: 3px
+  &:hover
+    cursor: pointer
+
+.PagArrow-right
+  transform: rotate(-45deg)
+
+.PagArrow-left
+  transform: rotate(135deg)
+
+.PagArrow-disable
+  border-color: $border-easy

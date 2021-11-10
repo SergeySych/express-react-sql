@@ -1,0 +1,29 @@
+@import "../../../app/mediaConstants"
+
+.Table-container
+  display: flex
+  border-radius: 10px
+  width: fit-content
+  max-width: 100%
+  overflow: auto
+
+.Table-column
+  margin-right: 1px
+  min-width: max-content
+
+.Column-top
+  background-color: $bg-color-header
+  padding: 14px 24px
+  color: $font-color-dif
+
+.Column-content
+  display: flex
+  flex-direction: column
+  & a
+    padding: 14px 24px
+    text-decoration: none
+    color: black
+    background-color: $border-easy
+
+  &:nth-child(odd)
+    background-color: $bg-color-easy

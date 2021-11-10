@@ -1,0 +1,56 @@
+@import "../../../app/mediaConstants"
+
+.Home-info
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  & h2
+    font-weight: 400
+    font-size: 32px
+    line-height: 39.01px
+    width: 500px
+  & p
+    width: 780px
+    color: $bg-color-hidden
+    font-size: 20px
+    @media (max-width: $breakpoint-second)
+      width: 500px
+    @media (max-width: $breakpoint-third)
+      width: 400px
+
+.Cards
+  @media (max-width: $breakpoint-second)
+    flex-direction: column
+  display: flex
+  flex-direction: row
+
+.Cards-item
+  @media (max-width: $breakpoint-first)
+    width: 280px
+    height: 280px
+  @media (max-width: $breakpoint-second)
+    width: 280px
+    height: 280px
+
+  width: 380px
+  height: 323px
+  background: $font-color-dif
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16)
+  border-radius: 32px
+  &:nth-child(2)
+    @media (max-width: $breakpoint-second)
+      margin: 20px 0
+    margin: 0 20px
+  & div
+    @media (max-width: $breakpoint-first)
+      padding: 24px 18px
+    padding: 48px 32px
+  & p
+    @media (max-width: $breakpoint-first)
+      width: 250px
+    width: 316px
+    font-size: 16px
+    line-height: 22.72px
+  & h3
+    font-size: 24px
